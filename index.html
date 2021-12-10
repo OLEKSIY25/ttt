@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %} Калькулятор {% endblock %}
+
+{% block body %}
+        <form action="/fun" method="GET">
+            <input type="number" name="a" value="{{a}}" autocomplete="off" required>
+            <input type="number" name="b" value= "{{b}}" autocomplete="off" required>
+            <input type="submit" value="Розрахувати">
+        </form>
+        Сумма = {{ sym }} <br>
+        Різниця = {{ riz }} <br>
+        Добуток = {{ dob }} <br>
+        Частка = {{ chas }} <br>
+{% endblock %}

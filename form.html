@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %} Form {% endblock %}
+
+{% block body %}
+        <form action="/fun" method="GET">
+
+
+            <input type="text" name="nickname" value="" autocomplete="off" required>
+
+
+            <input type="hiden" name="game" value="Dota 2" autocomplete="off" required>
+
+
+            <p><select name="sex" required>
+                    <option value="male">male</option>
+                    <option value="female">female</option>
+            </select></p>
+
+
+            <p><input type="checkbox" name="role1" value="1">Carry<Br>
+            <input type="checkbox" name="role2" value="2">Mider<Br>
+            <input type="checkbox" name="role3" value="3">Hard Liner<Br>
+            <input type="checkbox" name="role4" value="4">Suport<Br>
+            <input type="checkbox" name="role5" value="5">Hard Suport</p>
+
+
+            <p><input type="radio" name="rank" value="Herald"> Herald</p>
+            <p><input type="radio" name="rank" value="Guardian"> Guardian</p>
+            <p><input type="radio" name="rank" value="Crusader"> Crusader</p>
+            <p><input type="radio" name="rank" value="Archon"> Archon</p>
+            <p><input type="radio" name="rank" value="Legend"> Legend</p>
+            <p><input type="radio" name="rank" value="Ancient"> Ancient</p>
+            <p><input type="radio" name="rank" value="Divine"> Divine</p>
+            <p><input type="radio" name="rank" value="Immortal"> Immortal</p>
+
+            <p><b>Введите ваш отзыв:</b></p>
+            <p><textarea rows="10" cols="45" name="text"></textarea></p>
+
+            <p><input type="submit" value="Отправить"></p>
+
+        </form>
+{% endblock %}
